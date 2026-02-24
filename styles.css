@@ -1,0 +1,27 @@
+/* Whole page settings */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header part */
+header {
+  background-color: blue;
+}
+
+/* Main part */
+main {
+  background-color: yellow;
+  flex: 1;
+}
+
+/* Footer part */
+footer {
+  background-color: red;
+}
