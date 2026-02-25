@@ -1,4 +1,8 @@
 /* Whole page settings */
+:root {
+  --hero-color: #0AC4E0;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -12,16 +16,20 @@ body {
 
 /* Header part */
 header {
-  background-color: blue;
+  background-color: var(--hero-color);
+}
+
+.hero-link-icon {
+  height: auto;
+  width: 30px;
 }
 
 /* Main part */
 main {
-  background-color: yellow;
   flex: 1;
 }
 
 /* Footer part */
 footer {
-  background-color: red;
+  background-color: var(--hero-color);
 }
