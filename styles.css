@@ -1,6 +1,6 @@
 /* Whole page settings */
 :root {
-  --hero-color: #0AC4E0;
+  --hero-color: #67B2D8;
 }
 
 @font-face {
@@ -27,7 +27,27 @@ body {
 
 /* Header part */
 header {
+  position: relative;
+}
+
+header::before {
   background-color: var(--hero-color);
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(-7deg);
+  transform: skewY(-7deg);
+  transform-origin: top left;
+}
+
+header > * {
+  z-index: 2;
+  position: relative;
 }
 
 .hero-link-icon {
