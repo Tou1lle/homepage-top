@@ -1,4 +1,4 @@
-/* Whole page settings */
+/* --- WHOLE PAGE SETTINGS --- */
 :root {
   --hero-color: #67B2D8;
 }
@@ -25,11 +25,12 @@ body {
   font-family: my-play-fair, Arial, Helvetica, sans-serif;
 }
 
-/* Header part */
+/* --- HEADER PART --- */
 header {
   position: relative;
 }
 
+/* header angled background color */
 header::before {
   background-color: var(--hero-color);
   display: block;
@@ -55,12 +56,12 @@ header > * {
   width: 30px;
 }
 
-/* Main part */
+/* --- MAIN PART --- */
 main {
   flex: 1;
 }
 
-/* Footer part */
+/* --- FOOTER PART --- */
 footer {
   background-color: var(--hero-color);
 }
