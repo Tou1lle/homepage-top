@@ -159,6 +159,10 @@ main {
   height: auto;
 }
 
+main h2 {
+  margin-bottom: 1rem;
+}
+
 /* --- FOOTER PART --- */
 footer {
   background-color: var(--hero-color);
@@ -218,8 +222,38 @@ footer h2 {
   main {
     padding: 3rem;
   }
+}
 
-  main h2 {
-    margin-bottom: 2rem;
+@media (max-width: 1000px) {
+  /* Head part for tablets */
+  header::before {
+    bottom: 20%;
+  }
+
+  .monkey-header {
+    margin: 0 10px 10px 0;
+  }
+
+  .about-me-container {
+    padding-top: 50px;
+    margin: 100px 100px 0 100px;
+  }
+
+  .about-me-container h2 {
+    text-align: center;
+  }
+
+  .about-me-container p {
+    padding: 1rem;
+  }
+  
+  .hero-link-icons-container {
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+
+  .hero-image-container h1 {
+    top: 1rem;
+    right: -150px;
   }
 }
