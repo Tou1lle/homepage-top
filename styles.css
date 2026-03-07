@@ -1,6 +1,6 @@
 /* --- WHOLE PAGE SETTINGS --- */
 :root {
-  --hero-color: #67B2D8;
+  --hero-color: #53acd8;
 }
 
 @font-face {
@@ -162,8 +162,44 @@ main {
 /* --- FOOTER PART --- */
 footer {
   background-color: var(--hero-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 50px;
 }
 
+.address-icon {
+  height: auto;
+  width: 30px;
+}
+
+.monkey-footer {
+  width: 600px;
+  height: auto;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  width: 300px;
+}
+
+.contact-text,
+.street-address-container,
+.addresses-container {
+    margin-bottom: 2rem;
+}
+
+.addresses-container address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Media query for big screens */
 @media (min-width: 1000px) {
   section.header {
     display: flex;
