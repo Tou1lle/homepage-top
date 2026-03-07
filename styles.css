@@ -105,12 +105,14 @@ main {
   padding: 2rem;
 }
 
+/* layout of main part */
 .works-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
 }
 
+/* card layout and size */
 .work {
   display: flex;
   flex-direction: column;
@@ -119,6 +121,7 @@ main {
   box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.20);
 }
 
+/* image part of project card - image grows to remaining space */
 .work .work-screenshot {
   flex: 1;
   display: flex;
@@ -135,6 +138,7 @@ main {
   margin-bottom: 3rem;
 }
 
+/* project name and its link icons on opposite sides */
 .project-name-container {
   display: flex;
   justify-content: space-between;
