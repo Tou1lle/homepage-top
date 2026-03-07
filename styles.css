@@ -202,28 +202,48 @@ footer h2 {
   gap: 10px;
 }
 
-/* Media query for big screens */
-@media (min-width: 1000px) {
+/* Media query for small screens - mobile phones */
+@media (max-width: 700px) {
+  /* Change the page to collumn direction mainly */
   section.header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    flex-direction: column;
   }
 
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Center the image with this */
+  .monkey-header {
+    width: 100%;
+  }
+
+  /* make the image take the whole width of page */
+  .monkey-footer {
+    width: 100%;
+    /* Remove small gap at the end of the page */
+    display: block;
+  }
+
+  /* Adjust hero text */
   .about-me-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
   }
 
-  main {
-    padding: 3rem;
+  /* Adjust the background angled image */
+  header::before {
+    bottom: 70%;
   }
 }
 
-@media (max-width: 1000px) {
+/* Media query for medium sized screen - tablets */
+@media (min-width: 701px) and (max-width: 1000px) {
   /* Head part for tablets */
   header::before {
     bottom: 20%;
@@ -265,5 +285,26 @@ footer h2 {
 
   .contact-text {
     width: auto;
+  }
+}
+
+/* Media query for big screens */
+@media (min-width: 1000px) {
+  section.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  main {
+    padding: 3rem;
   }
 }
