@@ -105,6 +105,11 @@ main {
   padding: 2rem;
 }
 
+.project-link-icon {
+  width: 20px;
+  height: auto;
+}
+
 /* --- FOOTER PART --- */
 footer {
   background-color: var(--hero-color);
