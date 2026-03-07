@@ -28,6 +28,9 @@ body {
 /* --- HEADER PART --- */
 header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* header angled background color */
@@ -51,6 +54,44 @@ header > * {
   position: relative;
 }
 
+header section {
+  padding: 2rem;
+}
+
+.about-me-container {
+  background-color: white;
+}
+
+/* make text wrap around the image */
+.hero-image-container {
+  float: left;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* make text be inside image and at the bottom */
+.hero-image-container h1 {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+}
+
+/* default width of image on load */
+.monkey-header {
+  width: 400px;
+  height: auto;
+}
+
+/* put hero link icons to the right */
+.hero-link-icons-container {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
 .hero-link-icon {
   height: auto;
   width: 30px;
@@ -64,4 +105,20 @@ main {
 /* --- FOOTER PART --- */
 footer {
   background-color: var(--hero-color);
+}
+
+@media (min-width: 1000px) {
+  section.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
 }
