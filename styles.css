@@ -256,4 +256,13 @@ footer h2 {
     top: 1rem;
     right: -150px;
   }
+
+  /* Footer part for tablets */
+  .monkey-footer {
+    width: 400px;
+  }
+
+  .contact-text {
+    width: auto;
+  }
 }
