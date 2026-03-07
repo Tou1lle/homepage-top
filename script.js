@@ -1,7 +1,7 @@
 const works = document.querySelector(".works-container")
 
 for (let i = 0; i < 10; i++) {
-  const projectCard = createProject("Project Name", "Short description of the project. Just a couple sentences will do");
+  const projectCard = createProject(`Project Name ${i}`, "Short description of the project. Just a couple sentences will do");
   works.appendChild(projectCard);
 }
 
@@ -30,6 +30,8 @@ function createProject(projectName, projectDescription, projectImage = "") {
   workInfo.classList.add("work-info-container");
   workIcon1.classList.add("project-link-icon");
   workIcon2.classList.add("project-link-icon");
+  workNameContainer.classList.add("project-name-container");
+  workIconContainer.classList.add("project-link-icons-container");
 
   //append all
   card.append(workImage, workInfo);

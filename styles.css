@@ -105,6 +105,51 @@ main {
   padding: 2rem;
 }
 
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.20);
+}
+
+.work .work-screenshot {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+
+.work-info-container {
+  padding: 10px 20px;
+}
+
+.work-info-container p {
+  margin-bottom: 3rem;
+}
+
+.project-name-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.project-name-container h3 {
+  font-weight: 500;
+}
+
+.project-link-icons-container {
+  display: flex;
+  gap: 10px;
+}
+
 .project-link-icon {
   width: 20px;
   height: auto;
@@ -128,5 +173,13 @@ footer {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
+  }
+
+  main {
+    padding: 3rem;
+  }
+
+  main h2 {
+    margin-bottom: 2rem;
   }
 }
